@@ -1,6 +1,6 @@
-# Data Structures and Algorithms (DSA) in Java
+# Data Structures and Algorithms (DSA) in C
 
-Welcome to my Java-focused Data Structures and Algorithms (DSA) repository! This collection contains fundamental DSA concepts and implementations, designed to build a solid foundation in problem-solving and algorithmic thinking.
+Welcome to my C-focused Data Structures and Algorithms (DSA) repository! This collection contains fundamental DSA concepts and implementations, designed to build a solid foundation in problem-solving and algorithmic thinking.
 
 ## Contents
 
