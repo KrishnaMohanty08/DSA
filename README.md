@@ -11,7 +11,7 @@ Welcome to my C-focused Data Structures and Algorithms (DSA) repository! This co
 
 ## Features
 
-- **Java Implementations**: All code is written in Java for consistency and depth.
+- **C Implementations**: All code is written in C for consistency and depth.
 - **Detailed Code Comments**: Explanations alongside the code for easier understanding.
 - **Problem Examples**: Includes example problems with solutions to practice DSA concepts.
 
