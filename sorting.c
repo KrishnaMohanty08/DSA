@@ -113,6 +113,52 @@ void CountSort(int* arr, int size, int max) {
     for (int i = 0; i < size; i++) arr[i] = op[i];
 }
 
+void merge(int *arr, int low, int high, int mid) {
+    int n1 = mid - low + 1;
+    int n2 = high - mid;
+
+    int leftArr[n1], rightArr[n2];
+
+    // Fill the left and right arrays
+    for (int i = 0; i < n1; i++)
+        leftArr[i] = arr[low + i];
+    for (int j = 0; j < n2; j++)
+        rightArr[j] = arr[mid + 1 + j];
+
+    int i = 0, j = 0, k = low;
+    while (i < n1 && j < n2) {
+        if (leftArr[i] <= rightArr[j]) {
+            arr[k] = leftArr[i];
+            i++;
+        } else {
+            arr[k] = rightArr[j];
+            j++;
+        }
+        k++;
+    }
+
+    while (i < n1) {
+        arr[k] = leftArr[i];
+        i++;
+        k++;
+    }
+    while (j < n2) {
+        arr[k] = rightArr[j];
+        j++;
+        k++;
+    }
+}
+
+void mergeSort(int* arr, int low, int high) {
+    if (low < high) { 
+        int mid = low + (high - low) / 2; 
+
+        mergeSort(arr, low, mid);
+        mergeSort(arr, mid + 1, high);
+
+        merge(arr, low, high, mid);
+    }
+}
 int main() {
     int *arr = (int*)malloc(20 * sizeof(int));
     int key;
